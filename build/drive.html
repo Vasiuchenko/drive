@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Reset min css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <!--Castom stylesheet-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700&display=swap" rel="stylesheet" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Drive</title>
+</head>
+<body>
+    <div class="conteiner">
+        <aside class="menu">
+            <a href="" class="menu_logo">
+                <img src="images/logo.png" alt="" class="menu_user.png_image">
+            </a>
+            <nav class="menu_nav">
+                <a href="#" class="menu_nav_link">
+                    <i class="fas fa-cloud"></i>
+                    <span class="menu_nav_drive">My Drive</span>
+                </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="far fa-share-square"></i>
+                    <span class="menu_nav_share">Shared Files</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="far fa-folder-open"></i>
+                    <span class="menu_nav_file">File Requests</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="far fa-star"></i>
+                    <span class="menu_nav_starred">Starred</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="fas fa-trash-alt"></i>
+                    <span class="menu_nav_trash">Trash</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="fas fa-signal"></i>
+                    <span class="menu_nav_stat">Statistics</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="fas fa-tasks"></i>
+                    <span class="menu_nav_task">Task</span>
+                    </a>
+                <a href="#" class="menu_nav_link">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="menu_nav_user.pngut">Logout</span>
+                    </a>
+            </nav>
+            <div class="menu_footer">
+                <div class="menu_footer_header">
+                    <h3 class="title">
+                        <i class="fas fa-cloud"></i>
+                        <span>Storage</span>
+                    </h3>
+                    <span class="percent">73&percnt;</span>
+                </div>
+                <div class="menu_footer__progress">
+                    <progress id="file" max="100" value="27">27%</progress>
+                </div>
+                <span class="menu_footer_text">27/100 GB Used</span>
+            </div>
+        </aside>
+        <main class="content">
+            <header class="header_content">
+                <form action="" class="search-form">
+                    <label for="search-fild" class="search-form_label fas fa-search"></label>
+                    <input type="search" class="search-form_input" placeholder="Search" id="search-fild">
+                </form>
+            </header>
+            <section class="hero">
+                <section class="hero-header">
+                    <h2 class="hero-header_title">Dashboard</h2>
+                    <div class="hero-header_action">
+                            <i class="fas fa-th"></i>
+                            <i class="fas fa-list"></i>
+                        <button class="action_button">
+                            <span>Upload file</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </button>
+                    </div>
+                </section>
+                <div class="hero-content">
+                    <div class="hero-content_description">
+                        <p class="description_title">Welcome Back Jannie </p>
+                        <p class="description_text">Get additional 500 GB space for your documents and files.
+                            Unlock now for more space.</p>
+                            <button class="action_button">
+                                <span>Upgrade</span>
+                            </button>
+                    </div>
+                    <div class="hero-content_image">
+                        <img src="images/hero_poster.svg" alt="poster" class="image_poster" />
+                    </div>
+                </div>
+            </section>
+            <section class="folders">
+                <header class="folder_header">
+                    <h2 class="folder_header_title">Folders</h2>
+                    <button class="header_button">
+                        <span>View All</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </header>
+                <div class="cards">
+                    <article class="folder one">
+                        <header class="folder-header">
+                            <span class="card-header__icon fa-stack fa-lg">
+                                <i class="fas fa-folder fa-stack-2x"></i>
+                                <i class="fas fa-user-friends fa-stack-1x"></i>
+                            </span>
+                            <button class="folder-header_btn fas fa-ellipsis-v"></button>
+                        </header>
+                        <h3 class="folder_title">Design Shift</h3>
+                        <div class="folder_members">
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">+4</a>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-folder"></i>
+                            <span>10 Files</span>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-clock"></i>
+                            <span>
+                              Created on <time datetime="2019-12-13">Dec 13, 2019</time>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="folder health">
+                        <header class="folder-header">
+                            <span class="card-header__icon fa-stack fa-lg">
+                                <i class="fas fa-folder fa-stack-2x"></i>
+                                <i class="fas fa-user-friends fa-stack-1x"></i>
+                            </span>
+                            <button class="folder-header_btn fas fa-ellipsis-v"></button>
+                        </header>
+                        <h3 class="folder_title">Health Care App</h3>
+                        <div class="folder_members">
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">+2</a>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-folder"></i>
+                            <span>12 Files</span>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-clock"></i>
+                            <span>
+                              Created on <time datetime="2019-11-04">Nov 04, 2019</time>
+                            </span>
+                        </div>
+                    </article>
+                    <article class="folder food">
+                        <header class="folder-header">
+                            <span class="card-header__icon fa-stack fa-lg">
+                                <i class="fas fa-folder fa-stack-2x"></i>
+                                <i class="fas fa-user-friends fa-stack-1x"></i>
+                            </span>
+                            <button class="folder-header_btn fas fa-ellipsis-v"></button>
+                        </header>
+                        <h3 class="folder_title">Food truck Website</h3>
+                        <div class="folder_members">
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="folder_members_item">+4</a>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-folder"></i>
+                            <span>16 Files</span>
+                        </div>
+                        <div class="card__text">
+                            <i class="far fa-clock"></i>
+                            <span>
+                              Created on <time datetime="2019-11-03">Nov 03, 2019</time>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="recent">
+                <header class="recent_header">
+                    <h2>Recent Files</h2>
+                    <button class="header_button">
+                        <span>View All</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </header>
+                <div class="recent_line ">
+                    <div class="member_file">
+                        <div class="recent_line__type recent_line__type--doc">pdf</div>
+                        <h3 class="recent_line__name">Design Thinking Process</h3>
+                    </div>
+                    <div class="member_content">
+                        <span class="recent_line__members">Only You</span>
+                        <time datetime="2019-12-13" class="recent_line__date">
+                        Dec 13, 2019
+                        </time>
+                        <span class="recent_line__size">2 mb</span>
+                        <div class="recent_line__actions">
+                            <button class="recent_line__button fas fa-plus"></button>
+                            <button class="recent_line__button fas fa-share"></button>
+                            <button class="recent_line__button fas fa-ellipsis-v"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent_line ">
+                    <div class="member_file">
+                        <div class="recent_line__type recent_line__type--pic">png</div>
+                        <h3 class="recent_line__name">Design Thinking Process</h3>
+                    </div>
+                    <div class="member_content">
+                        <span class="recent_line__members">10 Members</span>
+                        <time datetime="2019-11-04" class="recent_line__date">
+                            Nov 04, 2019
+                        </time>
+                        <span class="recent_line__size">10 mb</span>
+                        <div class="recent_line__actions">
+                            <button class="recent_line__button fas fa-plus"></button>
+                            <button class="recent_line__button fas fa-share"></button>
+                            <button class="recent_line__button fas fa-ellipsis-v"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent_line ">
+                    <div class="member_file">
+                        <div class="recent_line__type recent_line__type--arc">zip</div>
+                        <h3 class="recent_line__name">Characters Animation</h3>
+                    </div>
+                    <div class="member_content">
+                        <span class="recent_line__members">15 Members</span>
+                        <time datetime="2019-11-01" class="recent_line__date">
+                        Nov 01, 2019
+                        </time>
+                        <span class="recent_line__size">50 mb</span>
+                        <div class="recent_line__actions">
+                            <button class="recent_line__button fas fa-plus"></button>
+                            <button class="recent_line__button fas fa-share"></button>
+                            <button class="recent_line__button fas fa-ellipsis-v"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="widgets">
+            <header class="widgets-header">
+                <button class="widgets-header__icon widgets-header__questionmark">
+                  <span>?</span>
+                </button>
+                <button class="widgets-header__icon fas fa-cog"></button>
+                <button class="widgets-header__icon far fa-bell"></button>
+                <div class="widgets-header__user">
+                  <div class="widgets-header__avatar">
+                    <img src="images/user.png" alt="User avatar" />
+                  </div>
+                  <button class="widgets-header__button">
+                    <span>Jannie</span>
+                    <span class="fas fa-chevron-down"></span>
+                  </button>
+                </div>
+            </header>
+            <section class="widget-calendar">
+                <div class="widget-calendar-header">
+                    <p class="header_title">Calendar</p>
+                    <button class="header_btn fas fa-chevron-up"></button>
+                </div>
+                <div class="widget-calendar-period">
+                    <input class="period_input" type="radio" name="switch" id="week">
+                    <label for="week" class="period_label">Week</label>
+                    <input class="period_input" type="radio" name="switch" id="month" checked>
+                    <label for="month" class="period_label">Month</label>
+                    <input class="period_input" type="radio" name="switch" id="year">
+                    <label for="year" class="period_label">Year</label>
+                </div>
+                <div class="widget-calendar_date">
+                    <button  class="date_btn fas fa-chevron-left"></button>
+                    <span class="date_title">December 2019</span>
+                    <button class="date_btn fas fa-chevron-right"></button>
+                </div>
+                <div class="widget-calendar-body">
+                <span class="body_item">Mon</span>
+                <span class="body_item">Tue</span>
+                <span class="body_item">Wed</span>
+                <span class="body_item">Thu</span>
+                <span class="body_item">Fri</span>
+                <span class="body_item">Sat</span>
+                <span class="body_item">Sun</span>
+            
+                <span class="body_item body_item--past">27</span>
+                <span class="body_item body_item--past">28</span>
+                <span class="body_item body_item--past">29</span>
+                <span class="body_item body_item--past">30</span>
+                <span class="body_item">1</span>
+                <span class="body_item">2</span>
+                <span class="body_item">3</span>
+
+                <span class="body_item">4</span>
+                <span class="body_item">5</span>
+                <span class="body_item">6</span>
+                <span class="body_item">7</span>
+                <span class="body_item">8</span>
+                <span class="body_item">9</span>
+                <span class="body_item">10</span>
+                <span class="body_item">11</span>
+                <span class="body_item">12</span>
+                <span class="body_item">13</span>
+                <span class="body_item">14</span>
+                <span class="body_item">15</span>
+                <span class="body_item">16</span>
+                <span class="body_item">17</span>
+                <span class="body_item">18</span>
+                <span class="body_item">19</span>
+                <span class="body_item">20</span>
+                <span class="body_item">21</span>
+                <span class="body_item">22</span>
+                <span class="body_item">23</span>
+                <span class="body_item">24</span>
+                <span class="body_item">25</span>
+                <span class="body_item">26</span>
+                <span class="body_item">27</span>
+                <span class="body_item">28</span>
+                <span class="body_item">29</span>
+                <span class="body_item">30</span>
+                <span class="body_item">31</span>
+                </div>
+            </section>
+            <section class="task">
+                <div class="task-header">
+                    <p class="task-header_title">Your Task</p>
+                    <button class="task-header_button">
+                        <span>View All</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="task-body">
+                    <div class="task-body_title">
+                        <p class="task_text">Review health care app with team</p>
+                        <button class="task-body_button fas fa-ellipsis-v"></button>
+                    </div>
+                    <div class="task-body_content">
+                        <span>
+                            Created on <time datetime="2019-12-07">Dec 07, 2019 | 10:00 AM</time>
+                        </span>
+                        <div class="task_member">
+                            <a href="#" class="task_member_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="task_member_item">
+                                <img src="images/user.png" alt="User avatar"/>
+                            </a>
+                            <a href="#" class="task_member_item">+</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="storage">
+                <div class="storage-header">
+                    <p class="storage-header_title">Storage</p>
+                    <button class="header_button">
+                        <span>View All</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="storage-body">
+                    
+                </div>
+            </section>
+
+
+        </aside>
+    </div>
+
+</body>
+</html>
