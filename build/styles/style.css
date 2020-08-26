@@ -760,6 +760,21 @@ body .conteiner a {
   cursor: not-allowed;
 }
 
+.widgets .header_button {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.06px;
+  color: #4D4D4D;
+  background-color: #EFF3FB;
+  padding: 7px 12px;
+  border-radius: 9px;
+}
+
+.widgets .header_button span {
+  margin-left: 6px;
+}
+
 .widgets .task {
   margin: 20px 0;
   border-radius: 16px;
@@ -863,17 +878,20 @@ body .conteiner a {
   color: #333539;
 }
 
-.widgets .storage-header .header_button {
+.widgets .storage-body {
+  background: #fff;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0.06px;
+  letter-spacing: 0.1px;
   color: #4D4D4D;
-  background-color: #EFF3FB;
-  padding: 7px 12px;
-  border-radius: 9px;
+  border-radius: 16px;
+  padding: 15px 5px;
+  box-sizing: border-box;
 }
 
-.widgets .storage-header .header_button span {
-  margin-left: 6px;
+.widgets .storage-body_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

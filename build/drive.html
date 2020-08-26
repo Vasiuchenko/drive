@@ -350,7 +350,7 @@
             <section class="task">
                 <div class="task-header">
                     <p class="task-header_title">Your Task</p>
-                    <button class="task-header_button">
+                    <button class="header_button">
                         <span>View All</span>
                         <i class="fas fa-chevron-right"></i>
                     </button>
@@ -385,13 +385,65 @@
                     </button>
                 </div>
                 <div class="storage-body">
-                    
+                    <div class="storage-body_title">
+                        <span class="storage-body_text">Avaliable Space <a href="">73 GB</a></span>
+                        <button class="header_button">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>Month</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <canvas id="myChart" width="125" height="200"></canvas>
                 </div>
+
             </section>
 
 
         </aside>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+                datasets: [{
+                    label: ' Visits',
+                    data: [45, 80, 15, 30, 75, 95, 55, 5],
+                    backgroundColor: [
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)'
+                    ],
+                    borderColor: [
+                    'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)',
+                        'rgba(102, 114, 251, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
 </body>
 </html>
